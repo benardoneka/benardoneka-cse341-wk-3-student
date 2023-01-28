@@ -1,0 +1,37 @@
+# ###Getting single item from the database
+# GET http://localhost:8080/employee
+
+# ###Create contact or inseting an item into the database
+# POST http://localhost:8080/employee HTTP/1.1
+# Content-Type: application/json
+
+# {
+#      "firstName": "Benard",
+#     "lastName": "Oneka",
+#     "email": "benOne@gmail.com",
+#     "genda": "Male",
+#     "birthday": "09/02/2017",
+#     "age": "15",
+#     "year": "Three",
+#     "semester": "Two",
+#     "grade": "B+"
+# }
+
+###Getting single item from the database
+GET https://oneka-web-dev-wk-3-cse341-api.onrender.com/employee
+
+###Create contact or inseting an item into the database
+POST https://oneka-web-dev-wk-3-cse341-api.onrender.com/employee HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Benard",
+    "lastName": "Oneka",
+    "email": "benOne@gmail.com",
+    "genda": "Male",
+    "birthday": "09/02/2017",
+    "age": "15",
+    "year": "Three",
+    "semester": "Two",
+    "grade": "B+"
+}

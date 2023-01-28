@@ -1,0 +1,27 @@
+{
+  "name": "benardoneka-cse341-wk-3-student",
+  "version": "1.0.0",
+  "description": "Assignment Wk 3 L05",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benardoneka/benardoneka-cse341-wk-3-student.git"
+  },
+  "author": "Benard Oneka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benardoneka/benardoneka-cse341-wk-3-student/issues"
+  },
+  "homepage": "https://github.com/benardoneka/benardoneka-cse341-wk-3-student#readme",
+  "devDependencies": {
+    "mongodb": "^4.13.0",
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  }
+}
