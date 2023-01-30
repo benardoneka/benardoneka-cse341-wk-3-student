@@ -39,10 +39,10 @@
 
 
 ###Getting single item from the database
-GET http://localhost:8080/employee
+GET https://oneka-web-dev-wk-3-cse341-l06-api.onrender.com/employee
 
 ###Create contact or inseting an item into the database
-POST http://localhost:8080/employee HTTP/1.1
+POST https://oneka-web-dev-wk-3-cse341-l06-api.onrender.com/employee HTTP/1.1
 Content-Type: application/json
 
 {
@@ -59,7 +59,7 @@ Content-Type: application/json
 
 
 ### Updating Employee records in the database
-PUT http://localhost:8080/employee/63d80544028a938be1aff426 HTTP/1.1
+PUT https://oneka-web-dev-wk-3-cse341-l06-api.onrender.com/employee/63d80544028a938be1aff426 HTTP/1.1
 Content-Type: application/json
 
 {
@@ -75,4 +75,4 @@ Content-Type: application/json
 }
 
 ### Deleting item using a rest API By ID to the record
-DELETE http://localhost:8080/employee/63d8055a028a938be1aff427 HTTP/1.1
+DELETE https://oneka-web-dev-wk-3-cse341-l06-api.onrender.com/employee/63d8055a028a938be1aff427 HTTP/1.1
