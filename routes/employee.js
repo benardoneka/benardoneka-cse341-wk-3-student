@@ -3,18 +3,7 @@ const router = express.Router();
 const app = express();
 app.use(express.json());
 const employeeController = require("../controllers/employee");
-app.use(express.static('static'));
-const path = require('path');
 const { check, validationResult } = require('express-validator');
-
-
-router.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, "/static/index.html"))
-})
-
-
-
-
 
 router.get("/", employeeController.getAllEmployee);
 
