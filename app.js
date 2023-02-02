@@ -27,7 +27,7 @@ app
   .set('view engine', '.hbs')
   .set("views", "./views")
   .use("/", require("./routes/employee"))
-  .use("/", require("./routes"))
+  .use("/", require("./routes/index"))
   //Using my static files in public directory
   .use(express.static(path.join(__dirname, "public")));
 
