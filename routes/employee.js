@@ -4,7 +4,7 @@ const app = express();
 app.use(express.json());
 
 
-router.get('/', (req, res) => {
+router.get('/login', (req, res) => {
   res.render("login", {
     layout: 'login'
   })
