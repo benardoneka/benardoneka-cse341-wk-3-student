@@ -10,26 +10,26 @@ const professionalRoutes = require("./routes/employee");
 const port = process.env.PORT || 8080;
 const app = express();
 
-
-// app.engine('html', require('html').renderFile);
-// app.set('view engine', 'html');
-
 //Using the handlebars to set views
-app.engine('.hbs', engine({ extname: '.hbs', defaultLayout: "main"}));
-app.set('view engine', '.hbs');
-app.set("views", "./views");
+// app.engine('.hbs', engine({ extname: '.hbs', defaultLayout: "main"}));
+// app.set('view engine', '.hbs');
+// app.set("views", "./views");
 
 //Using my static files in public directory
-app.use(express.static(path.join(__dirname, "public")));
-app
+// app.use(express.static(path.join(__dirname, "public")));
+// app
   .use(bodyParser.json())
   .use((req, res, next) => {
     res.setHeader("Access-Control-Allow-Origin", "*");
     next();
   })
-
-
-  .use("/", require("./routes/employee"));
+  .engine('.hbs', engine({ extname: '.hbs', defaultLayout: "main"}))
+  .set('view engine', '.hbs')
+  .set("views", "./views")
+  .use("/", require("./routes/employee"))
+  .use("/", require("./routes/index"))
+  //Using my static files in public directory
+  .use(express.static(path.join(__dirname, "public")));
 
   mongodb.initDb((err, mongodb) => {
   if (err) {
