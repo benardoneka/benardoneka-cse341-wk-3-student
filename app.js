@@ -17,7 +17,7 @@ const app = express();
 
 //Using my static files in public directory
 // app.use(express.static(path.join(__dirname, "public")));
-// app
+app
   .use(bodyParser.json())
   .use((req, res, next) => {
     res.setHeader("Access-Control-Allow-Origin", "*");
