@@ -1,28 +1,22 @@
-.login {
-    margin: 30px;
+p {
+    text-align: center;
+    margin: 10px 0 !important;
 }
-.form-check,
-.form-outline {
-    margin: 0 30px;
-}
-
-button {
-    margin: 30px;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-}
-.main-container {
-margin: 3rem auto;
-}
-
-section {
+h3 {
+    text-align: center;
     padding: 1rem;
 }
-.siginin {
-    background-color: #dd4b39;
-    margin-bottom: 2rem;
+
+.login-container {
+    width: 500px;
+    margin-top: 50px;
+    text-align: center;
 }
-.content-cont {
-    margin-bottom: 2rem;
+
+.section {
+    align-items: center;
+}
+
+.green {
+    background-color: green;
 }
