@@ -5,7 +5,7 @@ const doc = {
     title: "Employee Data API",
     description: "Employee",
   },
-  host: "oneka-web-dev-wk-3-cse341-l06-api.onrender.com",
+  host: "http://localhost:8080",
   schemes: ["https"],
 };
 

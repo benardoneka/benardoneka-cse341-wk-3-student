@@ -5,7 +5,7 @@
       "description": "Friend API",
       "version": "1.0.0"
     },
-    "host": "oneka-web-dev-wk-3-cse341-l06-api.onrender.com",
+    "host": "localhost:8080",
     "basePath": "/",
     "schemes": [
       "https"

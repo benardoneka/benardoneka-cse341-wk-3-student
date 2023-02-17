@@ -35,12 +35,12 @@ const initializeGoogleStrategy = (passport) => {
 
         // if (googleID) return done(new Error("User already exists"));
 
-        const addUser = await mongodb
-        .getDb()
-        .db("cse341-wk3-l05")
-        .collection("employee")
-        .insertOne(newUser);
-         return done(null, profile)
+        // const addUser = await mongodb
+        // .getDb()
+        // .db("cse341-wk3-l05")
+        // .collection("employee")
+        // .insertOne(newUser);
+        //  return done(null, profile)
 
     })
   );

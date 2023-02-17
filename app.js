@@ -5,6 +5,9 @@ const passport = require("passport")
 const { engine } = require('express-handlebars');
 const morgan = require("morgan")
 
+const cors = require("cors")
+
+
  
 const session = require("express-session"); 
 
@@ -22,6 +25,7 @@ app
     res.setHeader("Access-Control-Allow-Origin", "*");
     next();
   })
+  .use(cors())
   //sessions
   .use(session({ 		//Usuage
     secret: 'keyboard cat',
@@ -46,6 +50,8 @@ app
   .use("/", require("./routes/employee"))
   .use("/", require("./routes/index"))
   .use("/auth", require("./routes/auth"))
+
+
   
 
   passport.serializeUser(function(user, done) {
